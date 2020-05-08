@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>My app</title>
+</head>
+
+<body>
+
+<p>Hello world!</p>
+<a href="/goodbye">go to goodbye</a>
+
+</body>
+<table width="600" border="1">
+
+    <form action="#" th:action="@{/saveStudent}" th:object="${student}" method="post">
+        <table border="1">
+            <tr>
+                <td><label>id</label></td>
+                <td><input type="number" th:field="*{id}"></td>
+            </tr>
+            <tr>
+                <td><label>name</label></td>
+                <td><input type="text" th:field="*{name}"></td>
+            </tr>
+            <tr colspan="2">
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</table>
+</html>

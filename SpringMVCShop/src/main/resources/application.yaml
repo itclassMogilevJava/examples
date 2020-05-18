@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:itclass;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM 'classpath:sql/init.sql'
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

@@ -13,7 +13,7 @@
     </modules>
 
     <properties>
-        <spring-context.version>5.2.6.RELEASE</spring-context.version>
+        <spring-context.version>5.3.18</spring-context.version>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
